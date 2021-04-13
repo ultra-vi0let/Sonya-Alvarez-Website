@@ -33,7 +33,8 @@ const updateImage = index => {
 window.addEventListener('scroll', () => {
   const scrollTop = document.scrollingElement.scrollTop;
   const maxScrollTop = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollFraction = scrollTop / maxScrollTop;
+
+  const scrollFraction = (scrollTop / maxScrollTop) * 1.9;
   const frameIndex = Math.min(
     frameCount - 1,
     Math.ceil(scrollFraction * frameCount)
