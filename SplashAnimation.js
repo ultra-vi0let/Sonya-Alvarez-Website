@@ -2,13 +2,13 @@ const canvas = document.getElementById("sonya-splash");
 const context = canvas.getContext("2d");
 
 const currentFrame = index => (
-  `assets/SonyaWinsAnimation/frame-${index.toString().padStart(6,"0")}.jpg`
+  `assets/SonyaWinsAnimation/splash3/frame-${index.toString().padStart(6,"0")}.jpg`
    // `assets/TestAnimation/frame-${index.toString().padStart(6,"0")}.png`
 
 )
 
 // const frameCount = 196;
-const frameCount = 195;
+const frameCount = 392;
 
 const preloadImages = () => {
   for (let i = 0; i < frameCount; i++) {
