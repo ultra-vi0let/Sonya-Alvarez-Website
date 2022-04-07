@@ -2,7 +2,7 @@ const canvas = document.getElementById("sonya-splash");
 const context = canvas.getContext("2d");
 
 const currentFrame = index => (
-  `assets/SonyaWinsAnimation/splash3/frame-${index.toString().padStart(6,"0")}.jpg`
+  `assets/SonyaWinsAnimation/splash3/frame-${index.toString().padStart(6,"0")}.png`
    // `assets/TestAnimation/frame-${index.toString().padStart(6,"0")}.png`
    // test change
 
