@@ -90,6 +90,12 @@ section {
   background-size: contain;
 }
 
+@media only screen and (max-device-width: 1366px) {
+  .bg::after {
+    background-attachment: scroll;
+  }
+}
+
 
 .innerb {
   text-align: center;
@@ -184,9 +190,11 @@ h1 {
 }
 
 .kodePartition{
-  height: 50px;
+  height: 0px;
+  width: 100%;
   background-image: url(assets/img/kombatkodes.png);
   background-size: contain;
+  padding-top: 10%;
 }
 
 /* .parallax {
