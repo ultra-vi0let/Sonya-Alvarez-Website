@@ -192,9 +192,10 @@ h1 {
 .kodePartition{
   height: 0px;
   width: 100%;
+  overflow-x: hidden;
   background-image: url(assets/img/kombatkodes.png);
   background-size: contain;
-  padding-top: 10%;
+  padding-top: 3%;
 }
 
 /* .parallax {
