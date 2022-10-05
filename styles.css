@@ -31,6 +31,14 @@
   height: 50px;
 }
 
+.bioParagraph {
+  font-family: Calamity;
+  margin: 10vw;
+  line-height: 35pt;
+  font-size: 20pt;
+  color: white;
+}
+
 html, body {
   height: 100%;
 }
@@ -96,18 +104,38 @@ section {
   }
 }
 
-img.splashGif {
+@media all and (max-width: 1679px) {
+    .splashGif {
+      position: relative;
       height: 100%;
-      /* width:100vw; */
+      overflow: hidden; }
+
+    .splashGif img { position: absolute;
+      top: 0; left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+}
+
+.splashGif {
+      /* background-image: url(assets/SonyaWinsAnimation/sonya_splash_3.gif); */
+      height: 100%;
+      width:100%;
       /* margin: 0 auto; */
-      z-index: 0;
-      position:absolute;
+      /* z-index: 0; */
+      /* position:absolute; */
       /* top:50%; */
-      left:-850px;
+      /* left:-; */
       /* margin-top:-290px; */
-      margin-left:50vw;
-      overflow: hidden;
-      /* text-align: center; */
+      /* margin-left:-50vw; */
+      /* overflow: hidden; */
+      /* background-size: cover; */
+      /* background-repeat: no-repeat; */
+      /* background-position: : center; */
+      text-align: center;
+}
+
+.splashGif img {
+  height: 100%;
 }
 
 .innerb {
@@ -147,7 +175,7 @@ img.splashGif {
   text-align: center;
 }
 
-.bio-paragragh {
+/* .bio-paragragh {
   font-family: "Calamity";
   font-size: 24;
   text-align: center;
@@ -166,7 +194,7 @@ img.splashGif {
   text-align: center;
   line-height: 80%;
 
-}
+} */
 
 .linkHeader{
   background-image: url(assets/img/linksimage.png);
